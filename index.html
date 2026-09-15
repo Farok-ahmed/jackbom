@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackbom</title>
+    <!-- head e -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="site-sidebar" class="sidebar p-0">
+
+                    <!-- Menu heading -->
+                    <div class="p-3 text-white d-flex align-items-center">
+                        <i class="fas fa-bars mr-2"></i> Menu
+                    </div>
+
+                    <!-- Search box -->
+                    <div class="px-3 mb-3">
+                        <div class="input-group sidebar-search">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text search-icon"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control search-input" placeholder="Oyun ara...">
+                        </div>
+                    </div>
+
+                    <!-- Casino / Spor buttons -->
+                    <div class="px-3 mb-2 row no-gutters">
+                        <div class="col-6 px-1">
+                            <img src="./img/casino.png" class="w-100" alt="Casino">
+                        </div>
+                        <div class="col-6 px-1">
+                            <img src="./img/spor.png" class="w-100" alt="Spor">
+                        </div>
+                    </div>
+                    <div class="px-3 mb-3">
+                        <img src="./img/deposit.png" class="w-100" alt="Slider">
+                        <img src="./img/promosyonlar.png" class="w-100 mt-2" alt="Slider">
+                    </div>
+
+                    <!-- Menu list -->
+                    <ul class="list-unstyled sidebar-menu mt-3 px-3">
+                        <li class="active"><a href="#"><img src="./img/Anasayfa.png" alt="Anasayfa"> Anasayfa</a></li>
+                        <li><a href="#"><img src="./img/Promosyonlar.png" alt="Promosyonlar"> Promosyonlar</a></li>
+                        <li><a href="#"><img src="./img/Mobil Uygulama.png" alt="Mobil Uygulama"> Mobil Uygulama</a>
+                        </li>
+                        <li><a href="#"><img src="./img/Turnuvalar.png" alt="Turnuvalar"> Turnuvalar</a></li>
+                        <li><a href="#"><img src="./img/Meydan Okumalar.png" alt="Meydan Okumalar"> Meydan Okumalar</a>
+                        </li>
+                        <li><a href="#"><img src="./img/Çark Çevir.png" alt="Çark Çevir"> Çark Çevir</a></li>
+                        <li><a href="#"><img src="./img/VIP Kulübü.png" alt="VIP Kulübü"> VIP Kulübü</a></li>
+                        <li><a href="#"><img src="./img/Genel Destek.png" alt="Genel Destek"> Genel Destek</a></li>
+                    </ul>
+
+                    <section class="sidebar-social px-4 text-center" aria-label="Sosyal medya">
+                        <h2 class="mb-3">• SOSYAL MEDYA •</h2>
+                        <div class="row justify-content-center no-gutters mb-4">
+                            <a class="col-4 mb-2" href="#" aria-label="Instagram">
+                                <img src="./img/social/instagram.png" alt="Instagram">
+                            </a>
+                            <a class="col-4 mb-2" href="#" aria-label="X">
+                                <img src="./img/social/x.png" alt="X">
+                            </a>
+                            <a class="col-4 mb-2" href="#" aria-label="Facebook">
+                                <img src="./img/social/facebook.png" alt="Facebook">
+                            </a>
+                            <a class="col-4 mb-2" href="#" aria-label="Telegram">
+                                <img src="./img/social/telegram.png" alt="Telegram">
+                            </a>
+                            <a class="col-4 mb-2" href="#" aria-label="WhatsApp">
+                                <img src="./img/social/whatsapp.png" alt="WhatsApp">
+                            </a>
+                            <a class="col-4 mb-2" href="#" aria-label="Telegram">
+                                <img src="./img/social/telegram.png" alt="Telegram">
+                            </a>
+                        </div>
+                        <div class="sidebar-app border rounded p-2">
+                            <strong class="d-block text-white">MOBİL UYGULAMA</strong>
+                            <small class="d-block mb-2">Jackbom uygulamasını indirin.</small>
+                            <a class="btn btn-sm btn-primary px-4" href="#">HEMEN İNDİR</a>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="sidebar-overlay" data-sidebar-close></div>
+                <div class="main-content">
+                    <header class="site-header d-flex align-items-center justify-content-between">
+                        <button class="sidebar-toggle btn d-lg-none" type="button" aria-label="Menüyü aç"
+                            aria-controls="site-sidebar" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <nav class="header-categories d-flex align-items-center" aria-label="Kategoriler">
+                            <a href="#" class="header-category d-inline-flex align-items-center font-weight-bold rounded-pill">
+                                <img src="./img/header/spor bahisleri 1.png" alt="">
+                                <span>Canlı Casino</span>
+                            </a>
+                            <a href="#" class="header-category d-inline-flex align-items-center font-weight-bold rounded-pill">
+                                <img src="./img/header/spor bahisleri 1 (1).png" alt="">
+                                <span>Spor Bahisleri</span>
+                            </a>
+                            <a href="#" class="header-category d-inline-flex align-items-center font-weight-bold rounded-pill">
+                                <img src="./img/header/spor bahisleri 1 (2).png" alt="">
+                                <span>Casino</span>
+                            </a>
+                        </nav>
+
+                        <a href="#" class="brand-logo d-inline-flex align-items-center flex-shrink-0" aria-label="Jackbom ana sayfa">
+                            <img src="./img/header/jackbom_logo.png" alt="Jackbom">
+                        </a>
+
+                        <div class="header-actions d-flex align-items-center">
+                            <a href="#" class="header-button header-login">Giriş Yap</a>
+                            <a href="#" class="header-button header-register">Kayıt Ol</a>
+                        </div>
+                    </header>
+
+                    <main class="hero-section">
+                        <div class="hero-banners d-flex flex-column">
+                            <a href="#" class="hero-banner hero-banner-main mb-3">
+                                <img src="./img/hero/Web Slider - 2421x625 1.png" alt="%50 slot yatırım bonusu">
+                            </a>
+                            <div class="hero-banner-row row mx-n1">
+                                <a href="#" class="hero-banner col-6 px-1">
+                                    <img src="./img/hero/Banner1 1.png" alt="Barcelona Real Madrid">
+                                </a>
+                                <a href="#" class="hero-banner col-6 px-1">
+                                    <img src="./img/hero/Banner2 1.png" alt="VIP müşteri temsilcisi">
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="hero-menu-button" aria-label="JB menu">
+                            <img src="./img/hero/Buton2 1.png" alt="JB Menu">
+                        </a>
+
+                        <div class="hero-catalog row mx-n1" aria-label="Oyun kategorileri">
+                            <a href="#" class="hero-catalog-card col-6 col-md-4 col-lg px-1 mb-2 mb-lg-0">
+                                <img src="./img/hero/Katalog - Casino 2 (1).png" alt="Casino">
+                            </a>
+                            <a href="#" class="hero-catalog-card col-6 col-md-4 col-lg px-1 mb-2 mb-lg-0">
+                                <img src="./img/hero/Katalog - Casino 2 (2).png" alt="Spor">
+                            </a>
+                            <a href="#" class="hero-catalog-card col-6 col-md-4 col-lg px-1 mb-2 mb-lg-0">
+                                <img src="./img/hero/Katalog - Casino 3.png" alt="Çark">
+                            </a>
+                            <a href="#" class="hero-catalog-card col-6 col-md-4 col-lg px-1 mb-2 mb-lg-0">
+                                <img src="./img/hero/Katalog - Casino 4.png" alt="VIP">
+                            </a>
+                            <a href="#" class="hero-catalog-card col-6 col-md-4 col-lg px-1 mb-2 mb-lg-0">
+                                <img src="./img/hero/Katalog - Casino 5.png" alt="Bonuslar">
+                            </a>
+                        </div>
+                    </main>
+
+                    <section class="featured-section" aria-label="Öne çıkan maçlar">
+                        <a href="#" class="featured-app-banner">
+                            <img src="./img/hero/Mobil Uygulama - Banner 1.png" alt="Jackbom mobil uygulaması">
+                        </a>
+                        <a href="#" class="featured-matches">
+                            <img src="./img/hero/Öner Çıkan Maçlar 1.png" alt="Öne çıkan maçlar">
+                        </a>
+                    </section>
+
+                    <section class="originals-section" aria-labelledby="originals-title">
+                        <h2 id="originals-title">Jackbom Originals</h2>
+                        <div class="originals-grid row mx-n1">
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Originals/Originals 1 1.png" alt="Plinko">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Originals/Originals 1 2.png" alt="Dice">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Originals/Originals 1 3.png" alt="Limbo">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Originals/Originals 1 4.png" alt="Crash">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Originals/Originals 1 5.png" alt="Blackjack">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Originals/Originals 1 6.png" alt="Keno">
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="originals-section slot-section" aria-labelledby="slot-title">
+                        <h2 id="slot-title">En İyi Slot Oyunları</h2>
+                        <div class="originals-grid row mx-n1">
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Slot/Originals 1 2 (1).png" alt="Bee Keeper">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Slot/Originals 1 2.png" alt="Book of the Fallen">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Slot/Originals 1 3.png" alt="Captain Kraken">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Slot/Originals 1 4.png" alt="Gates of Olympus 1000">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Slot/Originals 1 5.png" alt="Sugar Rush 1000">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Slot/Originals 1 6.png" alt="Sweet Bonanza 1000">
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="originals-section live-section" aria-labelledby="live-title">
+                        <h2 id="live-title">En İyi Canlı Oyunlar</h2>
+                        <div class="originals-grid row mx-n1">
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Canlı/Originals 1 1.png" alt="Lightning Roulette">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Canlı/Originals 1 2.png" alt="Mega Wheel">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Canlı/Originals 1 3.png" alt="Lightning Storm">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Canlı/Originals 1 4.png" alt="Crazy Time">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Canlı/Originals 1 5.png" alt="Immersive Roulette Deluxe">
+                            </a>
+                            <a href="#" class="original-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Canlı/Originals 1 6.png" alt="Mega Roulette">
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="promo-section" aria-label="Oyun önerisi">
+                        <a href="#" class="promo-banner">
+                            <img src="./img/Ne Oynayacağınızı Bilmiyor Musunuz 1.png"
+                                alt="Ne oynayacağınızı bilmiyor musunuz?">
+                        </a>
+                    </section>
+
+                    <section class="payment-section" aria-label="Ödeme yöntemleri">
+                        <div class="payment-grid row mx-n1">
+                            <a href="#" class="payment-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Ödeme 1.png" alt="Havale">
+                            </a>
+                            <a href="#" class="payment-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Ödeme 2 1.png" alt="Hızlı QR">
+                            </a>
+                            <a href="#" class="payment-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Ödeme 3 1.png" alt="Payfix">
+                            </a>
+                            <a href="#" class="payment-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Ödeme 2 2.png" alt="Havale">
+                            </a>
+                            <a href="#" class="payment-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Ödeme 3 2.png" alt="Hızlı QR">
+                            </a>
+                            <a href="#" class="payment-card col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <img src="./img/Ödeme 4.png" alt="Payfix">
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="brands-section" aria-label="Oyun sağlayıcıları">
+                        <div class="brands-grid row mx-n1">
+                            <div class="col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <a href="#" class="brand-card d-flex align-items-center justify-content-center w-100 h-100">
+                                    <img src="./img/brand/evolution.png" alt="Evolution">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <a href="#" class="brand-card d-flex align-items-center justify-content-center w-100 h-100">
+                                    <img src="./img/brand/hacksaw.png" alt="Hacksaw Gaming">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <a href="#" class="brand-card d-flex align-items-center justify-content-center w-100 h-100">
+                                    <img src="./img/brand/pragmaticplay.png" alt="Pragmatic Play">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <a href="#" class="brand-card d-flex align-items-center justify-content-center w-100 h-100">
+                                    <img src="./img/brand/amusnet.png" alt="Amusnet">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <a href="#" class="brand-card d-flex align-items-center justify-content-center w-100 h-100">
+                                    <img src="./img/brand/betsoft.png" alt="Betsoft">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 px-1 mb-2">
+                                <a href="#" class="brand-card d-flex align-items-center justify-content-center w-100 h-100">
+                                    <img src="./img/brand/red tiger.png" alt="Red Tiger">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="about-section row mx-0" aria-label="Jackbom hakkında">
+                        <div class="col-lg-6 px-2 mb-3">
+                            <article class="about-card h-100">
+                                <div class="about-copy">
+                                    <h2>MİSYONUMUZ</h2>
+                                    <p>Jackbom olarak misyonumuz; kullanıcılarımıza yalnızca bir platform değil, her aşaması özenle tasarlanmış, hızlı, güvenilir ve kesintisiz bir dijital eğlence deneyimi sunmaktır. Kullanıcı ihtiyaçlarını merkeze alan yaklaşımımızla, güçlü altyapımızı yenilikçi teknolojiler, avantajlı promosyon seçenekleri ve erişilebilir destek hizmetleriyle bir araya getiriyoruz.</p>
+                                </div>
+                                <img src="./img/jack1.png" alt="Jackbom misyonu">
+                            </article>
+                        </div>
+                        <div class="col-lg-6 px-2 mb-3">
+                            <article class="about-card about-card-reverse h-100">
+                                <div class="about-copy">
+                                    <h2>VİZYONUMUZ</h2>
+                                    <p>Jackbom'un vizyonu; dijital eğlence sektöründe yenilikçi yaklaşımı, güçlü marka kimliği ve kullanıcı odaklı deneyimiyle fark yaratan, güven duyulan ve tercih edilen öncü markalardan biri olmaktır. Teknolojideki gelişmeleri ve değişen kullanıcı beklentilerini yakından takip ederek platformumuzu sürekli geliştirmek, sunduğumuz hizmetleri daha hızlı, daha erişilebilir ve daha kişiselleştirilmiş hale getirmek istiyoruz.</p>
+                                </div>
+                                <img src="./img/jack2.png" alt="Jackbom vizyonu">
+                            </article>
+                        </div>
+                    </section>
+
+                    <footer class="site-footer">
+                        <a href="#" class="footer-logo" aria-label="Jackbom ana sayfa">
+                            <img src="./img/header/jackbom_logo.png" alt="Jackbom">
+                        </a>
+                        <img class="footer-partners" src="./img/company.png"
+                            alt="BeGambleAware.org, Champions League ve LaLiga official partner">
+
+                        <div class="footer-notices row">
+                            <div class="footer-notice d-flex align-items-center col-md-6 mb-3">
+                                <img src="./img/cga.png" alt="CGA cert.cga.cw">
+                                <p>Jackbom web sitesinin sahibi ve işletmecisi Baltika System INC.'dir. Kayıt Numarası: C63748. Kayıtlı Adres: Unit 207, Heritage Plaza II, Main Street</p>
+                            </div>
+                            <div class="footer-notice d-flex align-items-center col-md-6 mb-3">
+                                <span class="age-badge" aria-label="18 yaş ve üzeri">18+</span>
+                                <p>Kumar eğlence amaçlıdır. Bahis yaparken para riske attığınızı unutmayın. Kaybetmeyi göze alabileceğinizden fazlasını harcamayın.</p>
+                            </div>
+                        </div>
+
+                        <nav class="footer-links row" aria-label="Footer menüsü">
+                            <div class="col-6 col-lg-3 mb-4">
+                                <h2>Spor Bahisleri</h2>
+                                <a href="#">Spor Bahisleri</a>
+                                <a href="#">Futbol</a>
+                                <a href="#">Basketbol</a>
+                                <a href="#">Amerikan Futbolu</a>
+                                <a href="#">Beyzbol</a>
+                                <a href="#">Tenis</a>
+                                <a href="#">Voleybol</a>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-4">
+                                <h2>Casino</h2>
+                                <a href="#">Casino Lobisi</a>
+                                <a href="#">Slot Lobisi</a>
+                                <a href="#">Canlı Casino Lobisi</a>
+                                <a href="#">Sağlayıcılar</a>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-4">
+                                <h2>Destek</h2>
+                                <a href="#">responsiblegaming</a>
+                                <a href="#">KYC Policy</a>
+                                <a href="#">Kurallar ve Şartlar</a>
+                                <a href="#">AML Politikası</a>
+                                <a href="#">Gizlilik Politikası</a>
+                                <a href="#">Hakkında</a>
+                                <a href="#">Ticaret</a>
+                                <a href="#">İletişim</a>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-4">
+                                <h2>Topluluk</h2>
+                                <a href="#">Blog</a>
+                                <a href="#">Instagram</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Telegram</a>
+                            </div>
+                        </nav>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        (function () {
+            var sidebar = document.querySelector('.sidebar');
+            var toggle = document.querySelector('.sidebar-toggle');
+            var overlay = document.querySelector('.sidebar-overlay');
+
+            function setSidebar(open) {
+                sidebar.classList.toggle('show', open);
+                overlay.classList.toggle('show', open);
+                toggle.setAttribute('aria-expanded', String(open));
+            }
+
+            toggle.addEventListener('click', function () {
+                setSidebar(!sidebar.classList.contains('show'));
+            });
+            overlay.addEventListener('click', function () {
+                setSidebar(false);
+            });
+        }());
+    </script>
+</body>
+
+</html>
