@@ -364,8 +364,8 @@ body {
   max-width: 290px;
   margin: 0;
   color: var(--color-light-gray);
-  font-size: 11px;
-  line-height: 1.35;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .about-card > img {
@@ -435,8 +435,8 @@ body {
 .footer-notice p {
   margin: 0;
   color: #c4bdbb;
-  font-size: 11px;
-  line-height: 1.35;
+  font-size: 14px;
+  line-height: 1.7;
   font-weight: 300;
 }
 
@@ -705,6 +705,7 @@ body {
   .main-content {
     width: 100%;
     max-width: 100%;
+    margin-left: 0;
   }
 
   .site-header {
