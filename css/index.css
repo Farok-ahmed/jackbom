@@ -53,18 +53,44 @@ body {
 }
 
 .sidebar {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40;
     background-color: var(--color-brown-900);
     color: #fff;
     width: 321px;
+    height: 100vh;
     flex-shrink: 0;
-    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-right: 2px solid #330E00;
+    scrollbar-width: thin;
+    scrollbar-color: #d94700 #1b0902;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 7px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1b0902;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff7a1a 0%, #d54500 100%);
+    border-radius: 999px;
+    border: 1px solid rgba(255, 183, 103, 0.28);
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ff8c38 0%, #eb4700 100%);
 }
 
 .main-content {
-  width: 1125px;
-  max-width: calc(100% - 321px);  /* screen choto hole overflow na hoy */
+  width: calc(100% - 321px);
+  max-width: calc(100% - 321px);
+  margin-left: 321px;
   flex-grow: 1;
 }
 
@@ -481,12 +507,12 @@ body {
 }
 
 .hero-menu-button {
-  position: absolute;
-  z-index: 2;
-  top: calc(25.8vw - 146px);
-  left: 50%;
-  width: 150px;
-  transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    top: calc(25.8vw - 203px);
+    left: 50%;
+    width: 266px;
+    transform: translateX(-50%);
 }
 
 .hero-menu-button img {
