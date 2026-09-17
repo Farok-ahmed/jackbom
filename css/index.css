@@ -340,7 +340,7 @@ body {
   display: flex;
   min-height: 232.494px;
   align-items: stretch;
-  overflow: hidden;
+  overflow: visible;
   border: 2px solid #401000;
   border-radius: 6px;
   /* background: linear-gradient(180deg, var(--color-about-start) 0%, var(--color-about-end) 100%); */
@@ -370,9 +370,9 @@ body {
 
 .about-card > img {
   align-self: flex-end;
-  width: 42%;
-  height: 100%;
-  max-height: 231px;
+  width: 48%;
+  height: 115%;
+  max-height: none;
   object-fit: contain;
   object-position: bottom right;
 }
@@ -470,7 +470,7 @@ body {
 .footer-links a {
   display: block;
   margin-bottom: 7px;
-  color: #763b28;
+  color: #c46a4d;
   font-size: 13px;
   line-height: 1.25;
   text-decoration: none;
