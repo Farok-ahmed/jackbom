@@ -30,8 +30,10 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text search-icon"><i class="fas fa-search"></i></span>
                             </div>
-                            <input type="text" class="form-control search-input" placeholder="Oyun ara...">
+                            <input type="search" class="form-control search-input" placeholder="Oyun ara..."
+                                aria-label="Oyun ara" aria-controls="game-search-results">
                         </div>
+                        <p class="game-search-status mb-0" aria-live="polite"></p>
                     </div>
 
                     <!-- Casino / Spor buttons -->
@@ -124,9 +126,9 @@
                         </div>
                     </header>
 
-                    <main class="hero-section">
+                    <main id="game-search-results" class="hero-section">
                         <div class="hero-banners d-flex flex-column">
-                            <a href="#" class="hero-banner hero-banner-main mb-3">
+                            <a href="#" class="hero-banner hero-banner-main mb-sm-3 mb-0">
                                 <img src="./img/hero/web-slider-2421x625-1.png" alt="%50 slot yatırım bonusu">
                             </a>
                             <div class="hero-banner-row row mx-n1">
@@ -138,9 +140,10 @@
                                 </a>
                             </div>
                         </div>
-                        <a href="#" class="hero-menu-button" aria-label="JB menu">
+                        <button type="button" class="hero-menu-button" aria-label="JB menu aç" aria-controls="jb-menu-modal"
+                            aria-expanded="false">
                             <img src="./img/hero/buton2-1.png" alt="JB Menu">
-                        </a>
+                        </button>
 
                         <div class="hero-catalog row mx-n1" aria-label="Oyun kategorileri">
                             <a href="#" class="hero-catalog-card col-6 col-md-4 col-lg px-1 mb-2 mb-lg-0">
@@ -388,6 +391,62 @@
         </div>
     </section>
 
+    <div id="jb-menu-modal" class="jb-modal" role="dialog" aria-modal="true" aria-labelledby="jb-modal-title"
+        aria-hidden="true">
+        <div class="jb-modal-backdrop" data-jb-close></div>
+        <section class="jb-modal-panel" role="document">
+            <div class="jb-modal-top">
+                <div class="jb-modal-kicker"><span></span> JACKBOM MENU <span></span></div>
+                <button type="button" class="jb-modal-close" data-jb-close aria-label="Menüyü kapat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="jb-modal-brand" aria-hidden="true">
+                <div class="jb-modal-ring"><span>JB</span></div>
+            </div>
+            <h2 id="jb-modal-title">Hoş Geldin</h2>
+            <p class="jb-modal-subtitle">Jackbom dünyasını keşfet</p>
+
+            <div class="jb-state-switch" role="tablist" aria-label="Menü durumu">
+                <button type="button" class="active" role="tab" aria-selected="true" aria-controls="jb-guest-menu"
+                    data-jb-state="guest">Misafir</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="jb-member-menu"
+                    data-jb-state="member">Üye girişi</button>
+            </div>
+
+            <div id="jb-guest-menu" class="jb-menu-state active" role="tabpanel" aria-label="Misafir menüsü">
+                <nav class="jb-menu-grid" aria-label="Misafir menü seçenekleri">
+                    <a href="#" class="jb-menu-item"><i class="fas fa-futbol"></i><span>Spor</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-dice"></i><span>Slot Casino</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-dice-five"></i><span>Canlı Casino</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-gift"></i><span>Bonus Talep</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-tags"></i><span>Promosyonlar</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-headset"></i><span>Canlı Destek</span><i class="fas fa-chevron-right"></i></a>
+                </nav>
+                <div class="jb-auth-actions">
+                    <a href="#" class="jb-auth-button jb-auth-login">Giriş Yap</a>
+                    <a href="#" class="jb-auth-button jb-auth-register">Üye Ol</a>
+                </div>
+            </div>
+
+            <div id="jb-member-menu" class="jb-menu-state" role="tabpanel" aria-label="Üye menüsü" hidden>
+                <nav class="jb-menu-grid" aria-label="Üye menü seçenekleri">
+                    <a href="#" class="jb-menu-item jb-menu-item-profile"><i class="fas fa-user"></i><span>Profilim</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-futbol"></i><span>Spor</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-dice"></i><span>Slot Casino</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-dice-five"></i><span>Canlı Casino</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-gift"></i><span>Bonus Talep</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-tags"></i><span>Promosyonlar</span><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="jb-menu-item"><i class="fas fa-headset"></i><span>Canlı Destek</span><i class="fas fa-chevron-right"></i></a>
+                </nav>
+                <div class="jb-auth-actions">
+                    <a href="#" class="jb-auth-button jb-auth-deposit"><i class="fas fa-wallet"></i> Para Yatır</a>
+                    <a href="#" class="jb-auth-button jb-auth-withdraw"><i class="fas fa-arrow-up"></i> Para Çek</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
 
     <!-- script -->
@@ -412,6 +471,89 @@
             overlay.addEventListener('click', function () {
                 setSidebar(false);
             });
+        }());
+
+        (function () {
+            var modal = document.getElementById('jb-menu-modal');
+            var menuButton = document.querySelector('.hero-menu-button');
+            var closeButtons = modal.querySelectorAll('[data-jb-close]');
+            var stateButtons = modal.querySelectorAll('[data-jb-state]');
+            var states = modal.querySelectorAll('.jb-menu-state');
+
+            function setModal(open) {
+                modal.classList.toggle('is-open', open);
+                modal.setAttribute('aria-hidden', String(!open));
+                menuButton.setAttribute('aria-expanded', String(open));
+                document.body.classList.toggle('jb-modal-open', open);
+            }
+
+            function setState(state) {
+                stateButtons.forEach(function (button) {
+                    var active = button.getAttribute('data-jb-state') === state;
+                    button.classList.toggle('active', active);
+                    button.setAttribute('aria-selected', String(active));
+                });
+                states.forEach(function (panel) {
+                    var active = panel.id === 'jb-' + state + '-menu';
+                    panel.classList.toggle('active', active);
+                    panel.hidden = !active;
+                });
+            }
+
+            menuButton.addEventListener('click', function () { setModal(true); });
+            closeButtons.forEach(function (button) {
+                button.addEventListener('click', function () { setModal(false); });
+            });
+            stateButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    setState(button.getAttribute('data-jb-state'));
+                });
+            });
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape' && modal.classList.contains('is-open')) setModal(false);
+            });
+        }());
+
+        (function () {
+            var searchInput = document.querySelector('.search-input');
+            var gameCards = Array.prototype.slice.call(document.querySelectorAll('.original-card'));
+            var status = document.querySelector('.game-search-status');
+            var gameSections = Array.prototype.slice.call(document.querySelectorAll('.originals-section'));
+
+            function normalize(value) {
+                return value.toLocaleLowerCase('tr-TR')
+                    .normalize('NFD')
+                    .replace(/[\u0300-\u036f]/g, '')
+                    .replace(/ı/g, 'i');
+            }
+
+            function updateSearch() {
+                var query = normalize(searchInput.value.trim());
+                var visibleCount = 0;
+
+                gameCards.forEach(function (card) {
+                    var image = card.querySelector('img');
+                    var searchableText = normalize((image ? image.alt : '') + ' ' + card.textContent);
+                    var matches = !query || searchableText.indexOf(query) !== -1;
+                    card.hidden = !matches;
+                    if (matches) visibleCount += 1;
+                });
+
+                gameSections.forEach(function (section) {
+                    var hasVisibleCard = section.querySelector('.original-card:not([hidden])');
+                    section.hidden = Boolean(query && !hasVisibleCard);
+                });
+
+                if (query && visibleCount === 0) {
+                    status.textContent = 'Aramanızla eşleşen oyun bulunamadı.';
+                } else if (query) {
+                    status.textContent = visibleCount + ' oyun bulundu.';
+                } else {
+                    status.textContent = '';
+                }
+            }
+
+            searchInput.addEventListener('input', updateSearch);
         }());
     </script>
 </body>
