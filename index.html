@@ -20,8 +20,11 @@
                 <div id="site-sidebar" class="sidebar p-0">
 
                     <!-- Menu heading -->
-                    <div class="p-3 text-white d-flex align-items-center">
-                        <i class="fas fa-bars mr-2"></i> Menu
+                    <div class="sidebar-heading p-3 text-white d-flex align-items-center justify-content-between">
+                        <span><i class="fas fa-bars mr-2"></i> Menu</span>
+                        <button class="sidebar-close" type="button" data-sidebar-close aria-label="Menüyü kapat">
+                            <i class="fas fa-times"></i>
+                        </button>
                     </div>
 
                     <!-- Search box -->
@@ -168,9 +171,32 @@
                         <a href="#" class="featured-app-banner">
                             <img src="./img/hero/mobil-uygulama-banner-1.png" alt="Jackbom mobil uygulaması">
                         </a>
-                        <a href="#" class="featured-matches">
-                            <img src="./img/hero/oner-cikan-maclar-1.png" alt="Öne çıkan maçlar">
-                        </a>
+                        <div class="featured-matches">
+                            <div class="featured-matches-heading">
+                                <span class="featured-matches-kicker">ÖNE ÇIKAN MAÇLAR</span>
+                                <a href="#" class="featured-matches-link">Tümünü gör <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                            <div class="match-widgets">
+                                <a href="#" class="match-widget">
+                                    <span class="match-widget-league"><i class="fas fa-futbol"></i><span class="match-flag match-flag-it"></span><b>Serie A</b><i class="fas fa-chevron-down match-widget-chevron"></i></span>
+                                    <span class="match-divider"></span>
+                                    <span class="match-widget-teams"><strong>Inter Milan</strong><span class="team-logo team-logo-inter">I</span><span class="match-time">24 Oca<small>20:00</small></span><span class="team-logo team-logo-napoli">N</span><strong>SSC Napoli</strong></span>
+                                    <span class="match-widget-odds"><span><em>MS1</em><b>2.00</b></span><span><em>X</em><b>2.00</b></span><span><em>MS2</em><b>2.00</b></span></span>
+                                </a>
+                                <a href="#" class="match-widget">
+                                    <span class="match-widget-league"><i class="fas fa-futbol"></i><span class="match-flag match-flag-it"></span><b>Serie A</b><i class="fas fa-chevron-down match-widget-chevron"></i></span>
+                                    <span class="match-divider"></span>
+                                    <span class="match-widget-teams"><strong>Inter Milan</strong><span class="team-logo team-logo-inter">I</span><span class="match-time">24 Oca<small>20:00</small></span><span class="team-logo team-logo-napoli">N</span><strong>SSC Napoli</strong></span>
+                                    <span class="match-widget-odds"><span><em>MS1</em><b>2.00</b></span><span><em>X</em><b>2.00</b></span><span><em>MS2</em><b>2.00</b></span></span>
+                                </a>
+                                <a href="#" class="match-widget">
+                                    <span class="match-widget-league"><i class="fas fa-futbol"></i><span class="match-flag match-flag-it"></span><b>Serie A</b><i class="fas fa-chevron-down match-widget-chevron"></i></span>
+                                    <span class="match-divider"></span>
+                                    <span class="match-widget-teams"><strong>Inter Milan</strong><span class="team-logo team-logo-inter">I</span><span class="match-time">24 Oca<small>20:00</small></span><span class="team-logo team-logo-napoli">N</span><strong>SSC Napoli</strong></span>
+                                    <span class="match-widget-odds"><span><em>MS1</em><b>2.00</b></span><span><em>X</em><b>2.00</b></span><span><em>MS2</em><b>2.00</b></span></span>
+                                </a>
+                            </div>
+                        </div>
                     </section>
 
                     <section class="originals-section" aria-labelledby="originals-title">
@@ -246,9 +272,10 @@
                     </section>
 
                     <section class="promo-section" aria-label="Oyun önerisi">
-                        <a href="#" class="promo-banner">
-                            <img src="./img/random-game-banner.png" alt="Ne oynayacağınızı bilmiyor musunuz?">
-                        </a>
+                        <div class="promo-banner">
+                            <img src="./img/random-game-banner.png"
+                                alt="Ne oynayacağınızı bilmiyor musunuz? Oyun bul veya talep et">
+                        </div>
                     </section>
 
                     <section class="payment-section" aria-label="Ödeme yöntemleri">
@@ -402,7 +429,7 @@
                 </button>
             </div>
             <div class="jb-modal-brand" aria-hidden="true">
-                <div class="jb-modal-ring"><span>JB</span></div>
+                <div class="jb-modal-ring"><img src="./img/hero/buton2-1.png" alt=""></div>
             </div>
             <h2 id="jb-modal-title">Hoş Geldin</h2>
             <p class="jb-modal-subtitle">Jackbom dünyasını keşfet</p>
@@ -458,6 +485,7 @@
             var sidebar = document.querySelector('.sidebar');
             var toggle = document.querySelector('.sidebar-toggle');
             var overlay = document.querySelector('.sidebar-overlay');
+            var closeButtons = document.querySelectorAll('[data-sidebar-close]');
 
             function setSidebar(open) {
                 sidebar.classList.toggle('show', open);
@@ -470,6 +498,11 @@
             });
             overlay.addEventListener('click', function () {
                 setSidebar(false);
+            });
+            closeButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    setSidebar(false);
+                });
             });
         }());
 
@@ -500,6 +533,7 @@
                 });
             }
 
+            // Demo-only switch: production auth should apply the state class from the authenticated session.
             menuButton.addEventListener('click', function () { setModal(true); });
             closeButtons.forEach(function (button) {
                 button.addEventListener('click', function () { setModal(false); });
